@@ -19,7 +19,7 @@ My goal is to combine architecture and technology to build practical application
 ## Technologies Used
 - HTML
 - CSS
-- Tailwind CSS through the Play CDN
+- Tailwind CSS 
 
 ## Project Files
 - `index.html` — Page structure and content.
