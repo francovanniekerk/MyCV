@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franco van Niekerk | CV</title>
+
+  <!-- Tailwind and custom CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-slate-100">
+  <!-- Header and navigation -->
+  <header class="border-b border-white/10">
+    <nav class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-5 px-6 py-6" aria-label="Main navigation">
+      <a class="flex items-center gap-3 font-bold" href="#home">
+        <span class="logo">FV</span>
+        <span>Franco<span class="text-cyan-300">.</span></span>
+      </a>
+      <ul class="flex flex-wrap gap-5 text-sm text-slate-300">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home" class="mx-auto max-w-6xl px-6">
+
+    <!-- Profile -->
+    <section id="profile" class="grid items-center gap-14 py-20 lg:grid-cols-2 lg:py-28" aria-labelledby="profile-heading">
+      <div>
+        <p class="eyebrow mb-6">DESIGN THINKING & TECHNOLOGY</p>
+        <p class="mb-3 text-lg text-slate-400">Hello, I'm</p>
+        <h1 id="profile-heading" class="text-5xl font-bold leading-tight sm:text-7xl">
+          Franco<br>van Niekerk<span class="text-cyan-300">.</span>
+        </h1>
+        <p class="mt-6 text-xl font-semibold">
+          Professional Architect.<br><span class="gradient-text">Software Developer.</span>
+        </p>
+        <p class="mt-5 max-w-md leading-7 text-slate-300">
+          Bringing a designer's eye and a problem-solver's mindset to the digital world.
+        </p>
+        <ul class="mt-6 flex flex-wrap gap-2 text-sm" aria-label="Current web development learning">
+          <li class="tag">HTML</li>
+          <li class="tag">CSS</li>
+          <li class="tag">JavaScript</li>
+          <li class="tag">Tailwind CSS</li>
+        </ul>
+        <div class="mt-9 flex flex-wrap gap-5">
+          <a class="primary-button" href="#experience">Explore my experience</a>
+          <a class="secondary-button" href="#contact">Let's connect</a>
+        </div>
+      </div>
+
+      <!-- Profile image and floating cards -->
+      <div class="profile-art">
+        <div class="profile-circle">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D03AQG3z6xsWWzeRQ/profile-displayphoto-scale_400_400/B4DZ_IJ18uJMAg-/0/1785769455794?e=1793232000&v=beta&t=YfrrdQD0IumviCaJuJvM_ND3uDhuZ0ohc73ge80Bi7c"
+            alt="Franco van Niekerk profile">
+        </div>
+        <div class="floating-card code-card" aria-hidden="true">
+          <div class="mb-4 flex gap-2">
+            <span class="dot bg-pink-400"></span>
+            <span class="dot bg-amber-300"></span>
+            <span class="dot bg-cyan-300"></span>
+          </div>
+          <p class="text-cyan-300">const franco = {</p>
+          <p>&nbsp;design: <span class="text-pink-300">"spaces"</span></p>
+          <p>&nbsp;building: <span class="text-pink-300">"software"</span></p>
+          <p class="text-cyan-300">};</p>
+        </div>
+        <div class="floating-card qualification-card">
+          <strong class="gradient-text text-2xl">MArch</strong><br>
+          <span class="text-xs text-slate-300">Design foundation</span>
+        </div>
+        <p class="art-caption">ARCHITECTURE <span class="text-cyan-300">×</span> TECHNOLOGY</p>
+      </div>
+    </section>
+
+    <!-- Bio -->
+    <section id="bio" class="section-space" aria-labelledby="about-heading">
+      <p class="eyebrow">01 / ABOUT</p>
+      <h2 id="about-heading" class="section-title">From spaces to software.</h2>
+      <div class="max-w-3xl space-y-4 leading-8 text-slate-300">
+        <p>
+          I am a SACAP-registered Professional Architect with a Master of Architecture
+          from the University of the Free State. My architectural background includes
+          design, project documentation, project management and working with clients.
+        </p>
+        <p>
+          I enjoy turning ideas into things people can see and use. Architecture and
+          3D rendering let me combine creativity with technical thinking, and learning
+          to code gives me another way to solve problems.
+        </p>
+        <p>
+          I am currently studying full-stack software engineering.
+          My goal is to combine architecture and technology to build practical,
+          easy-to-use applications for real-world use.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section-space" aria-labelledby="skills-heading">
+      <p class="eyebrow">02 / SKILLS</p>
+      <h2 id="skills-heading" class="section-title">What I bring to the table.</h2>
+      <div class="grid gap-5 md:grid-cols-3">
+        <article class="card">
+          <h3 class="mb-5 text-xl font-semibold text-cyan-300">Architecture & design</h3>
+          <ul class="skill-list">
+            <li>Architectural design</li>
+            <li>Project documentation</li>
+            <li>Project management</li>
+            <li>3D rendering</li>
+						<li>3D Modeling/animation</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 class="mb-5 text-xl font-semibold text-pink-300">Currently learning</h3>
+          <ul class="skill-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Tailwind CSS</li>
+            <li>Git & GitHub</li>
+						<li>Python</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 class="mb-5 text-xl font-semibold text-violet-300">Working with people</h3>
+          <ul class="skill-list">
+            <li>Client relations</li>
+            <li>Communication & teamwork</li>
+            <li>Problem-solving</li>
+            <li>Adaptability & Leadership</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education-->
+    <div class="grid gap-12 lg:grid-cols-2">
+      <section id="education" class="section-space" aria-labelledby="education-heading">
+        <p class="eyebrow">03 / EDUCATION</p>
+        <h2 id="education-heading" class="section-title">Always learning.</h2>
+        <ol class="timeline">
+          <li>
+            <p class="date">2026 IN PROGRESS</p>
+            <h3>Full-Stack Software Engineering</h3>
+            <p>HyperionDev</p>
+          </li>
+          <li>
+            <p class="date">2019</p>
+            <h3>Master of Architecture (MArch)</h3>
+            <p>University of the Free State</p>
+          </li>
+          <li>
+            <p class="date">2018</p>
+            <h3>Honours Degree in Architecture</h3>
+            <p>University of the Free State</p>
+          </li>
+          <li>
+            <p class="date">2017</p>
+            <h3>Bachelor's Degree in Architecture</h3>
+            <p>University of the Free State</p>
+          </li>
+        </ol>
+      </section>
+
+			<!-- Experience -->
+      <section id="experience" class="section-space" aria-labelledby="experience-heading">
+        <p class="eyebrow">04 / EXPERIENCE</p>
+        <h2 id="experience-heading" class="section-title">Built on experience.</h2>
+        <p class="mb-7 leading-7 text-slate-300">
+          My experience in architectural practice has developed my ability to balance
+          design ideas, technical requirements and client needs.
+        </p>
+        <ol class="timeline">
+          <li>
+            <p class="date">2022 – 2026</p>
+            <h3>MBK Architects</h3>
+          </li>
+          <li>
+            <p class="date">2022</p>
+            <h3>HB Architects</h3>
+          </li>
+          <li>
+            <p class="date">2021 – 2022</p>
+            <h3>Slee & Co Architects</h3>
+          </li>
+          <li>
+            <p class="date">2020 – 2021</p>
+            <h3>Moffett & Moffett Architects</h3>
+          </li>
+        </ol>
+      </section>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="card my-12 p-8 sm:p-12" aria-labelledby="contact-heading">
+      <p class="eyebrow">04 / CONTACT</p>
+      <h2 id="contact-heading" class="section-title pt-4">Let's build a connection.</h2>
+      <p class="mb-6 text-slate-300">
+        Get in touch to talk about design, technology or a future collaboration.
+      </p>
+      <address class="flex flex-col items-start gap-4 not-italic">
+        <span class="font-semibold">Franco van Niekerk</span>
+        <a class="text-cyan-300" href="mailto:franco95vn@gmail.com">franco95vn@gmail.com</a>
+        <a>072 395 2973</a>
+        <a class="secondary-button" href="https://www.linkedin.com/in/franco-van-niekerk-5a582b19b/">Connect on LinkedIn</a>
+      </address>
+    </section>
+
+  </main>
+
+	<!-- Footer -->
+  <footer class="p-8 text-center text-sm text-slate-400">
+    2026 · Designed with curiosity
+  </footer>
+</body>
+</html>

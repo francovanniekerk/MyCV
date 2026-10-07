@@ -1,0 +1,250 @@
+/*
+  Tailwind classes in index.html control most layout and spacing.
+  This file controls custom colours, buttons, cards
+ */
+
+/* 1. Body */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #101827;
+
+  /*background glows - buttons*/
+  background-image:
+    radial-gradient(
+      ellipse at 80% 10%,
+      #743b762e,
+      transparent 30%
+    ),
+    radial-gradient(
+      ellipse at 10% 30%,
+      #0891b21a,
+      transparent 35%
+    );
+}
+
+/* 2. Links */
+a {
+  transition: color 0.2s, border-color 0.2s;
+}
+
+a:hover {
+  color: #67e8f9;
+}
+
+/* 3. Logo and text colors */
+.logo,
+.primary-button {
+  background: linear-gradient(110deg, #155e75, #9d174d);
+}
+
+.logo {
+  padding: 10px;
+  border-radius: 12px;
+  color: white;
+}
+
+/* Small uppercase labels - Blue */
+.eyebrow {
+  color: #67e8f9;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+/* Gradient text */
+.gradient-text {
+  color: #a5b4fc;
+  background: linear-gradient(90deg, #67e8f9, #f9a8d4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 4. Buttons */
+.primary-button,
+.secondary-button {
+  display: inline-block;
+  padding: 13px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Filled gradient button.*/
+.primary-button {
+  color: white;
+  border: 1px solid transparent;
+}
+
+/* Outlined button.*/
+.secondary-button {
+  border: 1px solid #526077;
+}
+
+/* 5. Coding badges */
+.tag {
+  background: #183044;
+  border: 1px solid #31506a;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: #cffafe;
+}
+
+/* 6. Section spacing and headings */
+.section-space {
+  padding: 48px 0;
+  border-top: 1px solid #ffffff14;
+}
+
+.section-title {
+  margin: 12px 0 28px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+/* 7. Cards and skill lists */
+.card,
+.floating-card {
+  background: #152031;
+  border: 1px solid #ffffff14;
+  border-radius: 18px;
+}
+
+/* Space inside normal cards. */
+.card {
+  padding: 28px;
+}
+
+/* Bullet lists inside the skills cards. */
+.skill-list {
+  padding-left: 18px;
+  list-style: disc;
+  color: #cbd5e1;
+  line-height: 2;
+}
+
+/* 8. Education and experience timelines */
+/* Vertical line beside the list. */
+.timeline {
+  border-left: 1px solid #42516a;
+  padding-left: 24px;
+}
+
+/* Each item is the positioning reference for its small dot. */
+.timeline li {
+  position: relative;
+  padding-bottom: 28px;
+}
+
+/* Create a decorative dot before each timeline item. */
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -29px;
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #67e8f9;
+}
+
+/* Qualification names and employer names. */
+.timeline h3 {
+  margin: 7px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* General paragraph colour inside a timeline. */
+.timeline p {
+  color: #cbd5e1;
+}
+
+/* Date text inside a timeline/overrides colour above. */
+.timeline .date {
+  color: #67e8f9;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* 9. Profile image and floating cards */
+
+/* container - reference area for floating cards. */
+.profile-art {
+  position: relative;
+  min-height: 410px;
+  display: grid;
+  place-items: center;
+}
+
+/*photo to the circle. */
+.profile-circle {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 3px solid #67e8f9;
+  overflow: hidden;
+}
+
+/* Fill the circle with the image. */
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Floating cards*/
+.floating-card {
+  position: absolute;
+  padding: 18px;
+  box-shadow: 0 15px 35px #0003;
+}
+
+/* Code card position */
+.code-card {
+  top: 0;
+  right: 0;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* Three small coloured dots in the code card. */
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+/* Design card position */
+.qualification-card {
+  bottom: 30px;
+  left: 0;
+}
+
+/* Caption text below profile image */
+.art-caption {
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #cbd5e1;
+}
+
+/* 10. Small screens */
+@media (max-width: 400px) {
+  .profile-circle {
+    width: 230px;
+    height: 230px;
+  }
+
+  .profile-art {
+    min-height: 380px;
+  }
+}
